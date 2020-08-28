@@ -178,12 +178,12 @@ public class HomePage extends base{
 	}
 	driver.findElement(By.xpath("//div[@class='btnfare btn withsub']")).click();
 	System.out.println("checked out");
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	
 	//To verify date in next page
 	
-	System.out.println(driver.findElement(By.xpath("//body[@id='body']/div[@class='page-row page-row-expanded']/div[@class='fill-space-container']/div[@class='flex-row-container']/div[@class='for-print-sibling']/div[@id='flightReviewTarget']/div[@class='MainContainer__MainContainerStyled-sc-1oaq8lp-0 joKfsx']/div[@class='MainContent__MainContentStyled-sc-1dsn5rw-0 ezxCrA']/div[@class='MainContent__FlexItem-sc-1dsn5rw-1 cnBqQZ']/div[@class='src__Box-sc-1sbtrzs-0 jRCDLh']/div[2]/div[1]/div[1]/div[1]/div[2]")).getText());
-	Assert.assertEquals(driver.findElement(By.xpath("//body[@id='body']/div[@class='page-row page-row-expanded']/div[@class='fill-space-container']/div[@class='flex-row-container']/div[@class='for-print-sibling']/div[@id='flightReviewTarget']/div[@class='MainContainer__MainContainerStyled-sc-1oaq8lp-0 joKfsx']/div[@class='MainContent__MainContentStyled-sc-1dsn5rw-0 ezxCrA']/div[@class='MainContent__FlexItem-sc-1dsn5rw-1 cnBqQZ']/div[@class='src__Box-sc-1sbtrzs-0 jRCDLh']/div[2]/div[1]/div[1]/div[1]/div[2]")).getText(), "Sat - Sep 12th, 2020");
+	System.out.println(driver.findElement(By.xpath("//body[@id='body']/div[@class='page-row page-row-expanded']/div[@class='fill-space-container']/div[@class='flex-row-container']/div[@class='for-print-sibling']/div[@id='flightReviewTarget']/div[@class='MainContainer__MainContainerStyled-sc-1oaq8lp-0 joKfsx']/div[@class='MainContent__MainContentStyled-sc-1dsn5rw-0 ezxCrA']/div[@class='MainContent__FlexItem-sc-1dsn5rw-1 cnBqQZ']/div[@class='src__Box-sc-1sbtrzs-0 jRCDLh']/div[3]/div[1]/div[1]/div[1]/div[2]")).getText());
+	Assert.assertEquals(driver.findElement(By.xpath("//body[@id='body']/div[@class='page-row page-row-expanded']/div[@class='fill-space-container']/div[@class='flex-row-container']/div[@class='for-print-sibling']/div[@id='flightReviewTarget']/div[@class='MainContainer__MainContainerStyled-sc-1oaq8lp-0 joKfsx']/div[@class='MainContent__MainContentStyled-sc-1dsn5rw-0 ezxCrA']/div[@class='MainContent__FlexItem-sc-1dsn5rw-1 cnBqQZ']/div[@class='src__Box-sc-1sbtrzs-0 jRCDLh']/div[3]/div[1]/div[1]/div[1]/div[2]")).getText(), "Sat - Sep 12th, 2020");
 	 
 	 System.out.println("validateDate test completed");
 
